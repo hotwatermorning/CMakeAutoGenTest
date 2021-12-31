@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+// パッケージ定義
+package MySchema;
+
+// import
+import "google/protobuf/timestamp.proto";
+import "User.proto";
+
+message MyData {
+  User user = 1;
+  google.protobuf.Timestamp create_time = 2;
+}
